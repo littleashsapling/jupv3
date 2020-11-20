@@ -113,7 +113,7 @@ close() {
  createKey({
     repo = "jupyter/notebook",
     ref = "master",
-    binderURL = mybinderURL
+    binderURL = myBinderURL
   }: BinderOptions): BinderKey {
     return `${prefix}${JSON.stringify({ repo, ref, binderURL })}`;
   }
