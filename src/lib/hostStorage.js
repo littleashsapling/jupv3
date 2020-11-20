@@ -9,7 +9,7 @@ import * as rxJupyter from "rx-jupyter";
 import * as operators from "rxjs/operators";
 
 import { tap, map, catchError, filter } from "rxjs/operators";
-import { of } from "rxjs/observable/of";
+import { of } from "rxjs";
 
 export opaque type BinderKey = string;
 

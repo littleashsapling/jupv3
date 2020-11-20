@@ -22,6 +22,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 ### `npm run start`
 
 Starts the application in production mode.
-The application should be compiled with \`next build\` first.
+The application should be compiled with \`npm run build\` first.
 
 See the section in Next docs about [deployment](https://github.com/zeit/next.js/wiki/Deployment) for more information.

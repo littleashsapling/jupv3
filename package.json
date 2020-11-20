@@ -36,14 +36,25 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+      ">0.2%"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      "last 1 chrome version"
     ]
-  }
+  },
+  "description": "Third version. Fingers crossed.",
+  "main": "next.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/littleashsapling/jupv3.git"
+  },
+  "author": "j leger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/littleashsapling/jupv3/issues"
+  },
+  "homepage": "https://github.com/littleashsapling/jupv3#readme"
 }

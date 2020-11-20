@@ -4,7 +4,6 @@ import * as React from "react";
 import type { HostState } from "./host";
 
 import { tap, map, catchError, filter } from "rxjs/operators";
-import { of } from "rxjs/observable/of";
 
 const { kernels } = require("rx-jupyter");
 
