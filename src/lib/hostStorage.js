@@ -83,15 +83,15 @@ export class LocalHostStorage {
       this.localForage = new LocalForage();
       window.addEventListener("storage", this.handleStorageEvent);
     }
-}
+
 
 //call to clean
 
-function close() {
+close() {
     window.removeEventListener("storage", this.handleStorageEvent);
 }
 
-function handleStorageEvent(event: {
+ handleStorageEvent(event: {
     key: string,
     oldValue: string,
     newValue: string
@@ -110,7 +110,7 @@ function handleStorageEvent(event: {
     }
   }
 
-  function createKey({
+ createKey({
     repo = "jupyter/notebook",
     ref = "master",
     binderURL = mybinderURL
@@ -118,7 +118,7 @@ function handleStorageEvent(event: {
     return `${prefix}${JSON.stringify({ repo, ref, binderURL })}`;
   }
 
-  async function checkUp(host: HostRecord): Promise<boolean> {
+  async  checkUp(host: HostRecord): Promise<boolean> {
     if (host.type === GETTING_UP) {
       return false;
     }
@@ -138,7 +138,7 @@ function handleStorageEvent(event: {
       .toPromise();
   }
 
-  async function allocate(binderOpts: BinderOptions): Promise<ServerConfig> {
+  async  allocate(binderOpts: BinderOptions): Promise<ServerConfig> {
     let original = this.get(binderOpts);
 
     if (!original || !original.config) {
@@ -192,15 +192,15 @@ function handleStorageEvent(event: {
     return host.config;
   }
 
-  function get(opts: BinderOptions): ?HostRecord {
+   get(opts: BinderOptions): ?HostRecord {
     const key = this.createKey(opts);
     return this.localForage.get(key);
   }
 
-  function set(opts: BinderOptions, host: HostRecord) {
+   set(opts: BinderOptions, host: HostRecord) {
     const key = this.createKey(opts);
     this.localForage.set(key, host);
   }
-
+}
 
 
