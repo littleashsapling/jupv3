@@ -2,15 +2,15 @@
 
 import * as React from "react";
 import Link from "next/link";
-import Head from "./components/head";
-import Nav from "./components/nav";
+import Head from "../components/head";
+import Nav from "../components/nav";
 
-import Kernel, { Consumer as KernelConsumer } from "./components/kernel";
-import Host, { Consumer as HostConsumer } from "./components/host";
+import Kernel, { Consumer as KernelConsumer } from "../components/kernel";
+import Host, { Consumer as HostConsumer } from "../components/host";
 
-import { RunKernel } from "./components/kernelRunner";
+import { RunKernel } from "../components/kernelRunner";
 
-import type { HostState } from "./components/host";
+import type { HostState } from "../components/host";
 
 const DebugView = (props: HostState) => {
   const url = `${props.endpoint}nteract/edit/?token=${props.token}`;
