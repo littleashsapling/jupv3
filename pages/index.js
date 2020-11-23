@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
+import _JSXStyle from "styled-jsx/style";
 import Head from "../components/head";
 import Nav from "../components/nav";
 
