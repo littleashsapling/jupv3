@@ -13,6 +13,7 @@ import { RunKernel } from "../components/kernelRunner";
 
 import type { HostState } from "../components/host";
 
+//debug box code
 const DebugView = (props: HostState) => {
   const url = `${props.endpoint}nteract/edit/?token=${props.token}`;
 
@@ -96,6 +97,7 @@ export default () => (
           if (!host) {
             return <div>loading</div>;
           }
+          //debug starts
           return (
             <DebugView
               endpoint={host.endpoint}
@@ -103,6 +105,7 @@ export default () => (
               crossDomain={host.crossDomain}
             />
           );
+          //debug ends
         }}
       </HostConsumer>
     </Host>
