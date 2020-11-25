@@ -1,4 +1,3 @@
-// @flow
 
 declare type JupyterMessageHeader<MT: String>= {
     msg_id: String,

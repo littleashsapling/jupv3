@@ -1,4 +1,4 @@
-// @flow
+
 
 declare type JupyterApi$ContentError = {
     reason: String,

@@ -10,7 +10,6 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
-    "flow-bin": "^0.138.0",
     "immutable": "^4.0.0-rc.12",
     "lodash": "^4.17.20",
     "next": "^10.0.1",
@@ -56,5 +55,8 @@
   "bugs": {
     "url": "https://github.com/littleashsapling/jupv3/issues"
   },
-  "homepage": "https://github.com/littleashsapling/jupv3#readme"
+  "homepage": "https://github.com/littleashsapling/jupv3#readme",
+  "devDependencies": {
+    "typescript": "^4.1.2"
+  }
 }
